@@ -1,0 +1,42 @@
+h1{
+    background-color: pink;
+    text-align: center;
+    margin-top: 0;
+}
+
+h1:hover{
+    color: red;
+}
+
+.flamengo{
+    background-color: rgb(255, 0, 0);
+    float: right;
+}
+
+.botafogo{
+    background-color: black;
+    color: white;
+}
+
+.gremio{
+    background-color: blue;
+    color: white;
+}
+
+.palmeiras{
+    background-color: green;
+}
+
+.time{
+    width: 150px;
+    text-align: center;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    border: 5px solid blueviolet;
+    border-radius: 50px;
+    padding: 5px;
+}
+

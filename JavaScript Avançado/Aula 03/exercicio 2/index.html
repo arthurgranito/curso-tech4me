@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech4Me | Exercício Arrow Function</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <h1>Cadastro de Funcionários</h1>
+        <div class="form">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+            <label for="cpf">CPF:</label>
+            <input type="number" name="cpf" id="cpf">
+            <label for="data">Data de Nascimento:</label>
+            <input type="date" name="data" id="data">
+            <label for="salario">Salário Bruto:</label>
+            <input type="number" name="salario" id="salarioBruto">
+            <div class="buttons">
+                <button onclick="cadastrarFuncionario()">Cadastrar Funcionário</button>
+                <button onclick="exibirFuncionarios()">Exibir Funcionários</button>
+            </div>
+        </div>
+    </main>
+
+    <section id="resultado">
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

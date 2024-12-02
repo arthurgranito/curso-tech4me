@@ -1,0 +1,66 @@
+body{
+   margin: 0;
+   font-family: 'Globotipo Variable', 'Globotipo', 'Globotipo UI', 'Globotipo Display', 'Globotipo Book', Avenir, Ubuntu, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+}
+
+aside{
+    display: flex;
+    flex-direction: row;
+}
+
+aside ul{
+    display: flex;
+    flex-direction: row;
+}
+
+aside li{
+    list-style-type: none;
+    margin-left: 35px;
+    font-weight: bold;
+}
+
+ul span:hover{
+    padding-bottom: 14px;
+    border-bottom: 2px solid;
+    transition: border-bottom-color 0.3s;
+}
+
+ul a{
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.cadastro{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 100px;
+}
+
+.cadastro a{
+    margin: 15px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.cadastro a:hover{
+    color: #0669DE;
+}
+
+header{
+    background-color: #C4170C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    color: white;
+    font-weight: bold;
+}
+
+.g1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+

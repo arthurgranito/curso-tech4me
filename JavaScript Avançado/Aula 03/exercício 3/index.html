@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <h1>Cadastro de Funcionários</h1>
+        <div class="form">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+            <label for="codigo">Código do Produto:</label>
+            <input type="number" name="codigo" id="codigo">
+            <label for="categoria">Categoria:</label>
+            <select name="categoria" id="categoria">
+                <option value="" selected disabled>Selecionar</option>
+                <option value="Eletrônicos">Eletrônicos</option>
+                <option value="Camisetas">Camisetas</option>
+                <option value="Calçados">Calçados</option>
+                <option value="Móveis">Móveis</option>
+            </select>
+            <label for="precoBase">Preço Base:</label>
+            <input type="number" name="precoBase" id="precoBase">
+            <div class="buttons">
+                <button onclick="cadastrarProduto()">Cadastrar Produto</button>
+                <button onclick="exibirProdutos()">Exibir Produtos</button>
+            </div>
+        </div>
+    </main>
+
+    <section id="resultado">
+        
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

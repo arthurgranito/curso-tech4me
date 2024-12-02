@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Jogadores de Futebol</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cadastro de Jogadores de Futebol</h1>
+    <form id="playerForm">
+        <label for="nome">Nome do Jogador:</label>
+        <input type="text" id="nome" name="nome" required><br>
+
+        <label for="posicao">Posição:</label>
+        <select id="posicao" name="posicao" required>
+            <option value="Goleiro">Goleiro</option>
+            <option value="Zagueiro">Zagueiro</option>
+            <option value="Lateral">Lateral</option>
+            <option value="Meio Campo">Meio Campo</option>
+            <option value="Atacante">Atacante</option>
+        </select><br>
+
+        <label for="imagem">Caminho da Imagem:</label>
+        <input type="text" id="imagem" name="imagem" required><br>
+
+        <button type="button" id="registerButton" onclick="cadastrar()">Cadastrar</button>
+    </form>
+
+    <div class="view-players">
+        <h2>Visualizar Jogadores</h2>
+        <label for="exibirPosicao">Escolha a Posição:</label>
+        <select id="exibirPosicao" name="exibirPosicao">
+            <option value="Goleiro">Goleiro</option>
+            <option value="Zagueiro">Zagueiro</option>
+            <option value="Lateral">Lateral</option>
+            <option value="Meio Campo">Meio Campo</option>
+            <option value="Atacante">Atacante</option>
+        </select>
+        <button type="button" id="viewButton" onclick="exibir()">Visualizar</button>
+    </div>
+
+    <div id="playerCards" class="players"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

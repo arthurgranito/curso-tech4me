@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo{
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.minutos, .segundos{
+    font-size: 3rem;
+    padding: 2rem;
+    background-color: #313131;
+    border-radius: 2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 10px 10px 10px black;
+}
+
+.promocao{
+    display: none;
+    font-size: 3rem;
+    animation: piscar 0.5s linear infinite;
+}
+
+@keyframes piscar {
+    0%{
+        color: black;
+    } 100%{
+        color: rgb(219, 79, 79);
+    }
+}

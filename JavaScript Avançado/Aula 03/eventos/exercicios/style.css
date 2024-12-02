@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+main{
+    display: flex;
+    gap: 3rem;
+    padding: 20px;
+    background: #313131;
+    border-radius: 2rem;
+    box-shadow: 10px 10px 10px black;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form input{
+    height: 40px;
+    padding: 10px;
+    font-size: 1rem;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(45, 236, 45);
+    color: white;
+}
+
+form button{
+    height: 40px;
+    border: 2px solid transparent;
+    font-size: 1rem;
+    color: white;
+    background: rgb(45, 236, 45);
+    font-weight: 600;
+    transition: all ease 0.5s;
+}
+
+form button:hover{
+    border: 2px solid rgb(45, 236, 45);
+    background: none;
+    color: rgb(45, 236, 45);
+}
+
+#lista-alunos{
+    display: none;
+    flex-direction: column;
+    margin-top: 20px;
+    color: white;
+    padding: 20px;
+    background: #313131;
+    padding-left: 30px;
+    border-radius: 2rem;
+    box-shadow: 10px 10px 10px black;
+}
+
+#lista-alunos ol{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="number"]::-webkit-inner-spin-button{
+    display: none;
+}

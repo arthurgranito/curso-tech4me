@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPDATE FULL (PUT)</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        button {
+            width: 400px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin-inline: 10px;
+        }
+
+        select,
+        input {
+            width: 100%;
+        }
+
+        .atualizar {
+            width: 100%;
+        }
+
+        #uma-aba {
+            height: 350px;
+        }
+
+        .aba-toda {
+            height: 100vh;
+            width: 100vw;
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .aba {
+            width: 350px;
+            height: 420px;
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .fechar-aba {
+            height: 40px;
+            width: 40px;
+            margin: 10px;
+            background-color: transparent;
+            color: red;
+            align-self: flex-end;
+        }
+
+        .fechar-aba:hover {
+            border: 2px solid red;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="../index.html" class="voltar">
+        <button>Voltar</button>
+    </a>
+
+    <button class="extrabutton" id="todo">ATUALIZAR ALUNO INTEIRO</button>
+
+    <div class="aba-toda hidden" id="aba-todo">
+        <div class="aba inteiro">
+            <button class="fechar-aba" id="x-todo">X</button>
+
+            <form id="form-todo">
+                <label for="id">ID do aluno <span style="color: red;">(não editável)</span>:</label>
+                <input type="text" name="id" id="id-todo">
+
+                <label for="nome">Nome do aluno:</label>
+                <input type="text" name="nome" id="nome-todo">
+
+                <label for="media">Média:</label>
+                <input type="text" name="media" id="media-todo">
+
+                <label for="status">Status:</label>
+                <select name="status" id="status-todo">
+                    <option value="">Selecionar</option>
+                    <option value="Aprovado">Aprovado</option>
+                    <option value="Reprovado">Reprovado</option>
+                </select>
+
+                <button type="submit" class="atualizar">Atualizar</button>
+            </form>
+        </div>
+    </div>
+
+    <button class="extrabutton" id="uma">ATUALIZAR UMA PROPRIEDADE</button>
+
+    <div class="aba-toda hidden" id="aba-uma">
+        <div class="aba inteiro" id="uma-aba">
+            <button class="fechar-aba" id="x-uma">X</button>
+
+            <form id="form-uma">
+                <label for="id">ID:</label>
+                <input type="number" name="id" id="id-uma">
+
+                <label for="propriedade">O que quer editar:</label>
+                <select name="propriedade" id="propriedade-escolhida">
+                    <option value="">Selecionar</option>
+                    <option value="nome">Nome</option>
+                    <option value="media">Média</option>
+                    <option value="status">Status</option>
+                </select>
+
+                <label for="valor">Novo valor:</label>
+                <input type="text" name="valor" id="valor-novo">
+
+                <button type="submit" class="atualizar">Atualizar</button>
+            </form>
+        </div>
+    </div>
+    <script src="atualizar.js"></script>
+</body>
+
+</html>

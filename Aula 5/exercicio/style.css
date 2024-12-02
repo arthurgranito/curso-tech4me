@@ -1,0 +1,40 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+h1{
+    margin: 0;
+    padding: 9px 0;
+    background-color: red;
+    color: white;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+}
+
+.pre_estreias{
+    border-left: 3px solid rgb(3, 3, 95);
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.pre_estreias h2{
+    margin-left: 10px;
+    margin-bottom: 0;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.pre_estreias p{
+    font-size: 15px;
+    margin: 0 10px;
+}
+
+img{
+    width: 142px;
+    height: 209px;
+}

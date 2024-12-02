@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .aba-toda{
+            height: 100vh;
+            width: 100vw;
+            position: fixed;
+            z-index: 999;
+            background-color: rgba(0, 0, 0, 0.5);
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lista{
+            width: 300px;
+            background-color: white;
+            border-radius: 20px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        a, button{
+            width: 400px;
+        }
+
+        .hidden{
+            display: none;
+        }
+
+        .aluno{
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid black;
+        }
+
+        .fechar{
+            align-self: flex-end;
+            background-color: transparent;
+            color: red;
+            width: 40px;
+            height: 40px;
+            margin: -10px;
+        }
+
+        .fechar:hover{
+            border: 2px solid red;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>CRUD</h1>
+        <button id="verAlunos">VER ALUNOS</button>
+
+        <div class="aba-toda hidden" id="aba">
+            <div class="lista" id="lista">
+                <button class="fechar" id="fechar">X</button>
+            </div>
+        </div>
+
+
+        <a href="cadastro/post.html">
+            <button>CADASTRAR ALUNO</button>
+        </a>
+
+        <a href="Atualizar/uptadteFull.html">
+            <button>ATUALIZAR ALUNO</button>
+        </a>
+
+        <a href="Deletar/deletar.html">
+            <button>DELETAR ALUNO</button>
+        </a>
+    </main>
+
+    <script src="ver.js"></script>
+</body>
+
+</html>
+
+<!-- <button onclick="requisicaoGet()">CREATE (GET)</button>
+<button onclick="requisicaoPut()">UPDATE FULL (PUT)</button>
+<button onclick="requisicaoPatch()">UPDATE (PATCH)</button>
+<button onclick="requisicaoDelete()">DELETE (DELETE)</button> -->

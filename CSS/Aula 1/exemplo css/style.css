@@ -1,0 +1,32 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteiner{
+    display: flex;
+    flex-direction: row;
+}
+
+.brasil{
+    background-color: green;
+    color: yellow;
+    margin: 10px;
+}
+
+.argentina{
+    background-color: blue;
+    color: white;
+    margin: 10px;
+}
+
+.chile{
+    background-color: red;
+    color: white;
+    margin: 10px;
+}

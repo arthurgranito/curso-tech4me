@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #313131;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px black;
+}
+
+.form input{
+    margin-bottom: 20px;
+    outline: none;
+    height: 40px;
+    font-size: 1rem;
+    background-color: transparent;
+    border: 1px solid #3c37;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.form .buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form .buttons button{
+    height: 40px;
+    border: 2px solid transparent;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #3c37;
+    color: white;
+    font-size: 1rem;
+    transition: all ease 0.5s;
+}
+
+.form .buttons button:hover{
+    border: 2px solid #3c37;
+    background-color: transparent;
+}
+
+#resultado{
+    display: none;
+    align-items: start;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #313131;
+    border-radius: 20px;
+    color: white;
+    width: 420px;
+    box-shadow: 10px 10px 10px black;
+    font-size: 1rem;
+}
+
+#resultado .funcionario{
+    padding: 10px;
+    border-bottom: 1px solid #3c37;
+    width: 100%;
+}
